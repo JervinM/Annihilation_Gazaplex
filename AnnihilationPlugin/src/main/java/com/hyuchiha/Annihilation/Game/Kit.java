@@ -5,12 +5,18 @@ import com.hyuchiha.Annihilation.Kits.Base.BaseKit;
 import com.hyuchiha.Annihilation.Kits.Implementations.*;
 import com.hyuchiha.Annihilation.Main;
 import com.hyuchiha.Annihilation.Utils.XMaterial;
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.configuration.Configuration;
-import org.bukkit.configuration.ConfigurationSection;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
+import org.bukkit.event.player.PlayerFishEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.configuration.Configuration;
+import org.bukkit.configuration.ConfigurationSection;
 
 import java.util.HashMap;
 
@@ -27,6 +33,7 @@ public enum Kit {
   MINER("MINER", XMaterial.STONE_PICKAXE.parseMaterial()),
   PYRO("PYRO", XMaterial.FLINT_AND_STEEL.parseMaterial()),
   SCORPIO("SCORPIO", XMaterial.NETHER_STAR.parseMaterial()),
+  SCOUT("SCOUT", XMaterial.FISHING_ROD.parseMaterial()), // Added Scout kit here
   TRANSPORTER("TRANSPORTER", XMaterial.QUARTZ.parseMaterial()),
   VAMPIRE("VAMPIRE", XMaterial.REDSTONE.parseMaterial()),
   WARRIOR("WARRIOR", XMaterial.STONE_SWORD.parseMaterial());
@@ -34,7 +41,6 @@ public enum Kit {
   private HashMap<String, BaseKit> kits = new HashMap<>();
 
   Kit(String name, Material m) {
-
     ItemStack icon = new ItemStack(m);
     ItemMeta meta = icon.getItemMeta();
     meta.setDisplayName(name.substring(0, 1) + name.substring(1).toLowerCase());
@@ -83,6 +89,9 @@ public enum Kit {
         break;
       case "SCORPIO":
         kits.put(name, new Scorpio(kitName, icon, configurationSection));
+        break;
+      case "SCOUT":
+        kits.put(name, new Scout(kitName, icon, configurationSection)); // Added Scout kit here
         break;
       case "TRANSPORTER":
         kits.put(name, new Transporter(kitName, icon, configurationSection));

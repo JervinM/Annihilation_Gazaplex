@@ -1,167 +1,169 @@
-#This points are for all the players and are required for unlock
-# a new class if a player doesn't has permission
-# do not remove any kit
+# These points are required for all players to unlock
+# a new class if they don't have permission.
+# Do not remove any kit.
+
 Kits:
   CIVILIAN:
-    name: "&3 Civil"
+    name: "&3Civilian"
     lore:
-      - "&3 Clase inicial"
+      - "&3Initial class"
       - ""
-      - "&b Este kit te da lo"
-      - "&b básico para sobrevivir."
+      - "&bThis kit provides you with the"
+      - "&bbasic items needed to survive."
     price: 0
+
   ACROBAT:
-    name: "&3 Acróbata"
+    name: "&3Acrobat"
     lore:
-      - "&b Tu eres la pluma"
+      - "&bYou are as light as a feather"
       - ""
-      - "&b Recorre el mundo con tu doble salto"
-      - "&b Dispara desde el cielo con tu arco"
-      - "&b Y corre por mas tiempo que otros jugadores"
-      - "&b Gracias a tu gran estamina"
+      - "&bTravel the world with your double jump,"
+      - "&bShoot from the sky with your bow,"
+      - "&band run for longer durations than other players"
+      - "&bdue to your great stamina."
     price: 75000
+
   ALCHEMIST:
-    name: "&3 Alquimista"
+    name: "&3Alchemist"
     lore:
-      - "&b Tu eres el autentico alquimista"
+      - "&bYou are the true alchemist"
       - ""
-      - "&b Con tu libro obten"
-      - "&b ingredientes para tus pociones"
-      - "&b cada 90 segundos"
-      - "&b cuidado que puede tocarte algo malo"
+      - "&bWith your book, gather ingredients"
+      - "&bfor your potions every 90 seconds."
+      - "&bBe careful, as you might get something nasty."
     price: 75000
+
   ARCHER:
-    name: "&3 Arquero"
+    name: "&3Archer"
     lore:
-      - "&b Tu eres la flecha"
+      - "&bYou are the arrow"
       - ""
-      - "&b Con tu arco inflinges +1 de daño"
-      - "&b Tienes la habilidad de craftear"
-      - "&b flechas a un bajo costo"
+      - "&bWith your bow, deal +1 damage"
+      - "&bYou have the ability to craft"
+      - "&barrows at a low cost."
     price: 75000
+
   BERSERKER:
-    name: "&2 Berserker"
+    name: "&2Berserker"
     lore:
-      - "&b Tu eres la autentica ira"
+      - "&bYou are the embodiment of rage"
       - ""
-      - "&b Con tu espada, eres capaz de"
-      - "&b aplicar mas daño a los oponentes"
-      - "&b con mejor armadura que la tuya."
+      - "&bWith your sword, you deal"
+      - "&bmore damage to opponents"
+      - "&bwith better armor than yours."
       - ""
-      - "&b Cada muerte te suma un corazon"
-      - "&b para un maximo de 20 corazones"
+      - "&bEach kill grants you an extra heart,"
+      - "&bup to a maximum of 20 hearts."
     price: 75000
+
   BLOODMAGE:
-    name: "&2 Bloodmage"
+    name: "&2Bloodmage"
     lore:
-      - "&b Tu eres el peligro"
+      - "&bYou are a force to be reckoned with"
       - ""
-      - "&b Puede que no golpees a la gente"
-      - "&b asta la muerte, pero eso no te hace"
-      - "&b menos potente."
+      - "&bYou might not strike foes down,"
+      - "&bbut that doesn't make you any less powerful."
       - ""
-      - "&b Ayuda a tus compañeros envenenando a"
-      - "&b tus enemigos y reduciendo su vida maxima"
+      - "&bSupport your teammates by poisoning"
+      - "&benemies and reducing their max health."
     price: 75000
+
   BUILDER:
-    name: "&2 Builder"
+    name: "&2Builder"
     lore:
-      - "&b Tu eres la piedra"
+      - "&bYou are the foundation of our defense"
       - ""
-      - "&b Tu eres el constructor de nuestra primera defensa"
-      - "&b Con tu habilidad, obtienes los objetos"
-      - "&b para construir la mejor base creada"
+      - "&bWith your ability, you obtain the items"
+      - "&bneeded to build the best base."
       - ""
-      - "&b Utiliza tus &cDelaying blocks"
-      - "&b Para apoyar en la defensa de tu equipo"
-      - "&b y quien sabe, quizas algun enemigo muera"
-      - "&b cruzando tu muro"
+      - "&bUse your &cDelaying blocks"
+      - "&bto support your team's defense."
+      - "&bWho knows, maybe an enemy will meet their end"
+      - "&bwhile crossing your wall."
     price: 25000
+
   DEFENDER:
-    name: "&2 Defender"
+    name: "&2Defender"
     lore:
-      - "&b Tu eres nuestra ultima defensa"
+      - "&bYou are our last line of defense"
       - ""
-      - "&b Tu eres el encargado de poner tu cuerpo"
-      - "&b y tu espiritu en la defensa"
-      - "&b de nuestro equipo"
+      - "&bYou put your body and spirit into the defense"
+      - "&bof our team."
       - ""
-      - "&b Mientras permanescas cerca del nexus"
-      - "&b Tendras corazones y regeneracion extra"
+      - "&bWhile close to the nexus,"
+      - "&byou have extra hearts and regeneration."
     price: 25000
+
   ENCHANTER:
-    name: "&2 Enchanter"
+    name: "&2Enchanter"
     lore:
-      - "&b El encantador"
+      - "&bThe master enchanter"
       - ""
-      - "&b Con tu habilidad"
-      - "&b por cada bloque de recursos"
-      - "&b que destruyas"
-      - "&b recibiras el doble"
-      - "&b de experiencia"
+      - "&bFor every resource block"
+      - "&byou break, you receive double experience."
     price: 25000
+
   MINER:
-    name: "&2 Minero"
+    name: "&2Miner"
     lore:
-      - "&b Tu eres el obrero"
+      - "&bYou are the diligent worker"
       - ""
-      - "&b Con tu set de herramientas"
-      - "&b consigues el doble de"
-      - "&b materiales minados"
+      - "&bWith your set of tools,"
+      - "&byou obtain double materials from mining."
       - ""
-      - "&b Arma a tu equipo"
+      - "&bArm your team with valuable resources."
     price: 10000
+
   PYRO:
-    name: "&2 Pyromaniatico"
+    name: "&2Pyro"
     lore:
-      - "&b Tu eres la llama"
+      - "&bYou are the embodiment of flame"
       - ""
-      - "&b Utiliza tus armas para dañar"
-      - "&b a tus rivales con tu fuego"
-      - "&b y no te preocupes"
-      - "&b el fuego no te puede hacer daño"
+      - "&bUse your fiery weapons to harm"
+      - "&byour rivals without concern for yourself,"
+      - "&bsince fire cannot harm you."
     price: 25000
-  SCORPIO:
-    name: "&2 Escorpio"
+
+  SCOUT:
+    name: "&2Scout"
     lore:
-      - "&b Eres el gancho"
+      - "&bYou are the expert grapple wielder"
       - ""
-      - "&2 Utiliza tu gancho especial"
-      - "&2 para atrapar a tus enemigos"
-      - "&2 hacia donde este"
-      - "&2 y asesinarlos de forma veloz"
-  TRANSPORTER:
-    name: "&2 Transporter"
-    lore:
-      - "&b Eres el puente"
-      - ""
-      - "&b Une dos partes del mapa con portales"
-      - "&b Que puedes crear para ti y tu equipo"
-      - "&b se muevan con facilidad"
-      - ""
-      - "&b Tus portales permanecerán en tanto"
-      - "&b sigas con vida o los destruyan"
+      - "&bUse your special grapple to catch"
+      - "&band swiftly eliminate your enemies."
     price: 75000
+
+  TRANSPORTER:
+    name: "&2Transporter"
+    lore:
+      - "&bYou are the bridge builder"
+      - ""
+      - "&bConnect two parts of the map with portals"
+      - "&bthat you can create for you and your team,"
+      - "&ballowing easy movement."
+      - ""
+      - "&bYour portals will remain as long as"
+      - "&byou are alive or until they are destroyed."
+    price: 75000
+
   VAMPIRE:
-    name: "&2 Vampiro"
+    name: "&2Vampire"
     lore:
-      - "&b Tu eres el miedo"
+      - "&bYou are the embodiment of fear"
       - ""
-      - "&b De noche, tu progreso en batalla"
-      - "&b es inalcanzable, con cada golpe que"
-      - "&b propines a tu adversario, tiene un 20%"
-      - "&b de probabilidad de absorber la vida"
-      - "&b de tu contrincante"
+      - "&bAt night, your progress in battle"
+      - "&bis unstoppable. Each hit you land"
+      - "&bhas a 20% chance of absorbing"
+      - "&byour opponent's life."
       - ""
-      - "&b Funciona solo de noche."
+      - "&bWorks only during the night."
     price: 25000
+
   WARRIOR:
-    name: "&2 Guerrero"
+    name: "&2Warrior"
     lore:
-      - "&b Eres un guerrero"
+      - "&bYou are a mighty warrior"
       - ""
-      - "&b Haces daño extra (+1)"
-      - "&b con cualquier arna"
-      - ""
-      - "&b Nadie te derribara"
+      - "&bDeal extra damage (+1)"
+      - "&bwith any weapon, striking fear into your foes."
     price: 50000

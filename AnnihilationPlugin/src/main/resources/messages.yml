@@ -1,5 +1,5 @@
 PREFIX: "&c[&fAnni&c]"
-SERVER_IP: "&6mc.gazaplex.net"
+SERVER_IP: "&6Ye.its.Anni.alright"
 # Teams
 TEAMS:
   RED: "RED"
@@ -116,7 +116,7 @@ ERRORS:
 # Scoreboard messages
 SCOREBOARDS:
   SB_LOBBY_TITLE: "Annihilation"
-  SB_GAME_PREFIX: "&c[&fGP&c]"
+  SB_GAME_PREFIX: "&c[&fAnni&c]"
 # BossBar messages
 BOSSBAR:
   WELCOME_TO_ANNIHILATION: "Welcome to Annihilation"
