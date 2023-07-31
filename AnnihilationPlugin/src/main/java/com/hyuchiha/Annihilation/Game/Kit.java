@@ -5,7 +5,9 @@ import com.hyuchiha.Annihilation.Kits.Base.BaseKit;
 import com.hyuchiha.Annihilation.Kits.Implementations.*;
 import com.hyuchiha.Annihilation.Main;
 import com.hyuchiha.Annihilation.Utils.XMaterial;
-import org.bukkit.Bukkit;
+import org.bukkit.configuration.Configuration;
+import org.bukkit.configuration.ConfigurationSection;
+ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -15,8 +17,7 @@ import org.bukkit.event.EventPriority;
 import org.bukkit.event.player.PlayerFishEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.bukkit.configuration.Configuration;
-import org.bukkit.configuration.ConfigurationSection;
+
 
 import java.util.HashMap;
 
@@ -38,17 +39,17 @@ public enum Kit {
   VAMPIRE("VAMPIRE", XMaterial.REDSTONE.parseMaterial()),
   WARRIOR("WARRIOR", XMaterial.STONE_SWORD.parseMaterial());
 
-  private HashMap<String, BaseKit> kits = new HashMap<>();
+  private final HashMap<String, BaseKit> kits = new HashMap<>();
 
   Kit(String name, Material m) {
     ItemStack icon = new ItemStack(m);
     ItemMeta meta = icon.getItemMeta();
-    meta.setDisplayName(name.substring(0, 1) + name.substring(1).toLowerCase());
+    meta.setDisplayName(name.charAt(0) + name.substring(1).toLowerCase());
     icon.setItemMeta(meta);
 
     Configuration configuration = Main.getInstance().getConfig("kits.yml");
 
-    loadKit(name, icon, configuration.getConfigurationSection("Kits." + name().toUpperCase()));
+    loadKit(name, icon, configuration.getConfigurationSection("Kits." + name.toUpperCase()));
   }
 
   private void loadKit(String name, ItemStack icon, ConfigurationSection configurationSection) {
@@ -110,16 +111,16 @@ public enum Kit {
   }
 
   public String getName() {
-    return name().substring(0, 1) + name().substring(1).toLowerCase();
+    return name().charAt(0) + name().substring(1).toLowerCase();
   }
 
   public boolean isOwnedBy(Player p) {
     Account account = Main.getInstance().getMainDatabase().getAccount(p.getUniqueId().toString(), p.getName());
 
     return p.isOp()
-        || this == CIVILIAN
-        || p.hasPermission("annihilation.class." + getName().toLowerCase())
-        || (account != null && account.hasKit(this));
+            || this == CIVILIAN
+            || p.hasPermission("annihilation.class." + getName().toLowerCase())
+            || (account != null && account.hasKit(this));
   }
 
   public void resetKit() {
